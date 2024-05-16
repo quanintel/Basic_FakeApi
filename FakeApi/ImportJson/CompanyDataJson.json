@@ -1,0 +1,110 @@
+{
+  "entries": {
+    "entry": [
+      {
+        "address_l": "458 Minh Khai",
+        "totalRecords": "14",
+        "company_id": "575B3578-ADC5-4130-BFB2-845E5868F923",
+        "company_name_l": "PHÒNG KHÁM ĐA KHOA QUỐC TẾ VINMEC SÀI GÒN",
+        "hotline": null,
+        "emergency": null,
+        "company_code": "CSG",
+        "address_e": "458 Minh Khai",
+        "tel": "+84 (28) 88888888",
+        "company_name_e": "VINMEC SAI GON INTERNATIONAL CLINIC",
+        "fax": "+84 (28) 88888888"
+      },
+      {
+        "address_l": "458 Minh Khai",
+        "totalRecords": "14",
+        "company_id": "F2ED14F7-8961-4BB6-BDFB-AC15847DDED3",
+        "company_name_l": "BỆNH VIỆN ĐA KHOA QUỐC TẾ VINMEC HẢI PHÒNG",
+        "hotline": "+84 (22) 57301888",
+        "emergency": "+84 (22) 57309115",
+        "company_code": "HHP",
+        "address_e": "458 Minh Khai",
+        "tel": "+84 (22) 57309888",
+        "company_name_e": "VINMEC HAI PHONG INTERNATIONAL HOSPITAL",
+        "fax": "+84 (22) 57309888"
+      },
+      {
+        "address_l": "458 Minh Khai",
+        "totalRecords": "14",
+        "company_id": "44C75792-3F19-46C5-B179-6B6F0A76A1B3",
+        "company_name_l": "BỆNH VIỆN ĐA KHOA QUỐC TẾ VINMEC ĐÀ NẴNG",
+        "hotline": "+84 (236) 3611611",
+        "emergency": "+84 (236) 3715555",
+        "company_code": "HDN",
+        "address_e": "458 Minh Khai",
+        "tel": "+84 (236) 3711111",
+        "company_name_e": "VINMEC DA NANG INTERNATIONAL HOSPITAL",
+        "fax": "+84 (236) 3611551"
+      },
+      {
+        "address_l": "458 Minh Khai, Phường Vĩnh Tuy",
+        "totalRecords": "14",
+        "company_id": "8B1384E4-74E0-4E33-A87C-5EAA76BEC128",
+        "company_name_l": "BỆNH VIỆN ĐA KHOA QUỐC TẾ VINMEC TIMES CITY",
+        "hotline": "+84 (24) 39744333",
+        "emergency": "+84 (24) 39743558",
+        "company_code": "HHN",
+        "address_e": "458 Minh Khai, Vinh Tuy Ward",
+        "tel": "+84 (24) 39743556",
+        "company_name_e": "VINMEC TIMES CITY INTERNATIONAL HOSPITAL",
+        "fax": "+84 (24) 39743557"
+      },
+      {
+        "address_l": "458 Minh Khai",
+        "totalRecords": "14",
+        "company_id": "0781F0BB-ECAF-4EDA-BD4F-7DA69453303C",
+        "company_name_l": "BỆNH VIỆN ĐA KHOA QUỐC TẾ VINMEC PHÚ QUỐC",
+        "hotline": "+84 (297) 3985511",
+        "emergency": "+84 (297) 3985522",
+        "company_code": "HPQ",
+        "address_e": "458 Minh Khai",
+        "tel": "+84 (297) 3985588",
+        "company_name_e": "VINMEC PHU QUOC INTERNATIONAL HOSPITAL",
+        "fax": "+84 (297) 3985566"
+      },
+      {
+        "address_l": "458 Minh Khai",
+        "totalRecords": "14",
+        "company_id": "4D81631A-9A8E-11E6-8554-C48E8F5F21A8",
+        "company_name_l": "BỆNH VIỆN ĐA KHOA QUỐC TẾ VINMEC HẠ LONG",
+        "hotline": "+84 (203) 3656115",
+        "emergency": "+84 (203) 3511599",
+        "company_code": "HHL",
+        "address_e": "458 Minh Khai",
+        "tel": "+84 (203) 3828188",
+        "company_name_e": "VINMEC HA LONG INTERNATIONAL HOSPITAL",
+        "fax": "+84 (203) 3616188"
+      },
+      {
+        "address_l": "458 Minh Khai",
+        "totalRecords": "14",
+        "company_id": "650C1946-4D5C-11E5-8F69-7429AF28AF3C",
+        "company_name_l": "BỆNH VIỆN ĐA KHOA QUỐC TẾ VINMEC CENTRAL PARK",
+        "hotline": "+84 (938) 098959",
+        "emergency": "+84 (28) 36221188",
+        "company_code": "HCP",
+        "address_e": "458 Minh Khai",
+        "tel": "+84 (28) 36221166",
+        "company_name_e": "VINMEC CENTRAL PARK INTERNATIONAL HOSPITAL",
+        "fax": "+84 (28) 36221177"
+      },
+      {
+        "address_l": "458 Minh Khai",
+        "totalRecords": "14",
+        "company_id": "3155C066-E676-11E5-8913-7429AF28B27A",
+        "company_name_l": "BỆNH VIỆN ĐA KHOA QUỐC TẾ VINMEC NHA TRANG",
+        "hotline": "+84 (258) 3900199",
+        "emergency": "+84 (258) 3900188",
+        "company_code": "HNT",
+        "address_e": "458 Minh Khai",
+        "tel": "+84 (258) 3900168",
+        "company_name_e": "VINMEC NHA TRANG INTERNATIONAL HOSPITAL",
+        "fax": "+84 (258) 3900169"
+      }
+    ]
+  }
+}
