@@ -22,19 +22,22 @@ public class SystemOHController : ControllerBase
         _serviceImport = serviceImport;
     }
 
-    [HttpGet]
-    [Route("ImportJson")]
-    public async Task<IActionResult> ImportJson()
-    {
-        await _serviceImport.ReadFile<CompanyDto, Company>("/Volumes/Data/Code/FakeApi/FakeApi/ImportJson/CompanyDataJson.json");
-        await _serviceImport.ReadFile<ProductDto, Product>("/Volumes/Data/Code/FakeApi/FakeApi/ImportJson/ProductDataJson.json");
-        await _serviceImport.ReadFile<MomentTypeDto, MomentType>("/Volumes/Data/Code/FakeApi/FakeApi/ImportJson/MomentTypeDataJson.json");
-        
-        await _serviceImport.ReadFile<UnitDto, Unit>("/Volumes/Data/Code/FakeApi/FakeApi/ImportJson/UnitDataJson.json");
-        await _serviceImport.ReadFile<WarehouseDto, Warehouse>("/Volumes/Data/Code/FakeApi/FakeApi/ImportJson/WarehouseDataJson.json");
-        await _serviceImport.ReadFile<WarehouseProductDto, WarehouseProduct>("/Volumes/Data/Code/FakeApi/FakeApi/ImportJson/WarehouseProductDataJson.json");
-        return Ok(1);
-    }
+    // [HttpGet]
+    // [Route("ImportJson")]
+    // public async Task<IActionResult> ImportJson()
+    // {
+    //     await _serviceImport.ReadFile<CompanyDto, Company>("/Volumes/Data/Code/FakeApi/FakeApi/ImportJson/CompanyDataJson.json");
+    //     await _serviceImport.ReadFile<ProductDto, Product>("/Volumes/Data/Code/FakeApi/FakeApi/ImportJson/ProductDataJson.json");
+    //     await _serviceImport.ReadFile<MomentTypeDto, MomentType>("/Volumes/Data/Code/FakeApi/FakeApi/ImportJson/MomentTypeDataJson.json");
+    //     
+    //     await _serviceImport.ReadFile<UnitDto, Unit>("/Volumes/Data/Code/FakeApi/FakeApi/ImportJson/UnitDataJson.json");
+    //     await _serviceImport.ReadFile<WarehouseDto, Warehouse>("/Volumes/Data/Code/FakeApi/FakeApi/ImportJson/WarehouseDataJson.json");
+    //     await _serviceImport.ReadFile<WarehouseProductDto, WarehouseProduct>("/Volumes/Data/Code/FakeApi/FakeApi/ImportJson/WarehouseProductDataJson.json");
+    //     
+    //     await _serviceImport.ReadFile<WarehouseInputDto, WarehouseInput>("/Volumes/Data/Code/FakeApi/FakeApi/ImportJson/WarehouseInputJson.json");
+    //     await _serviceImport.ReadFile<WarehouseTransactionHistoryDto, WarehouseTransactionHistory>("/Volumes/Data/Code/FakeApi/FakeApi/ImportJson/WarehouseTransactionHistoryJson.json");
+    //     return Ok(1);
+    // }
 
     [HttpGet]
     [Route("GetCompany")]
@@ -136,6 +139,36 @@ public class SystemOHController : ControllerBase
         var rs = new ApiResponseOH<WarehouseProductDto>
         {
             Entries = new ApiResponseOHBody<WarehouseProductDto>
+            {
+                Entry = listData
+            }
+        };
+        return Ok(rs);
+    }
+    
+    [HttpGet]
+    [Route("GetWarehouseInput")]
+    public async Task<IActionResult> GetWarehouseInput([FromQuery] ApiInput input)
+    {
+        var (listData, totalCount) = await _service.GetWarehouseInput(input);
+        var rs = new ApiResponseOH<WarehouseInputDto>
+        {
+            Entries = new ApiResponseOHBody<WarehouseInputDto>
+            {
+                Entry = listData
+            }
+        };
+        return Ok(rs);
+    }
+    
+    [HttpGet]
+    [Route("GetWarehouseTransactionHistory")]
+    public async Task<IActionResult> GetWarehouseTransactionHistory([FromQuery] ApiInput input)
+    {
+        var (listData, totalCount) = await _service.GetWarehouseTransactionHistory(input);
+        var rs = new ApiResponseOH<WarehouseTransactionHistoryDto>
+        {
+            Entries = new ApiResponseOHBody<WarehouseTransactionHistoryDto>
             {
                 Entry = listData
             }

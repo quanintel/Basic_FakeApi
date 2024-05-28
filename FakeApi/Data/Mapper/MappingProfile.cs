@@ -14,6 +14,8 @@ public class MappingProfile : Profile
         CreateMap<Company, CompanyDto>().ReverseMap();
         CreateMap<MomentType, MomentTypeDto>().ReverseMap();
         CreateMap<WarehouseProduct, WarehouseProductDto>().ReverseMap();
+        CreateMap<WarehouseInput, WarehouseInputDto>().ReverseMap();
+        CreateMap<WarehouseTransactionHistory, WarehouseTransactionHistoryDto>().ReverseMap();
         CreateMap<Unit, UnitDto>().ReverseMap();
     }
 }

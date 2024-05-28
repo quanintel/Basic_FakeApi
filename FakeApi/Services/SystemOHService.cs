@@ -71,9 +71,25 @@ public class SystemOHService
 
     public async Task<(List<WarehouseProductDto> listData, long totalCount)> GetWareHouseProduct(ApiInput input)
     {
-        var query = _dbContext.WareHouse.AsNoTracking();
+        var query = _dbContext.WarehouseProduct.AsNoTracking();
         var total = await query.Select(x => x.Id).LongCountAsync();
         var list = await query.GetQueryByInput(input).ToListAsync();
         return (_mapper.Map<List<WarehouseProductDto>>(list), total);
+    }
+    
+    public async Task<(List<WarehouseTransactionHistoryDto> listData, long totalCount)> GetWarehouseTransactionHistory(ApiInput input)
+    {
+        var query = _dbContext.WarehouseTransactionHistory.AsNoTracking();
+        var total = await query.Select(x => x.Id).LongCountAsync();
+        var list = await query.GetQueryByInput(input).ToListAsync();
+        return (_mapper.Map<List<WarehouseTransactionHistoryDto>>(list), total);
+    }
+    
+    public async Task<(List<WarehouseInputDto> listData, long totalCount)> GetWarehouseInput(ApiInput input)
+    {
+        var query = _dbContext.WarehouseInput.AsNoTracking();
+        var total = await query.Select(x => x.Id).LongCountAsync();
+        var list = await query.GetQueryByInput(input).ToListAsync();
+        return (_mapper.Map<List<WarehouseInputDto>>(list), total);
     }
 }

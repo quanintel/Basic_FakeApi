@@ -24,6 +24,10 @@ public class FakeContext : DbContext
     public virtual DbSet<Company> Company { get; set; }
     
     public virtual DbSet<MomentType> MomentType { get; set; }
+    
+    public virtual DbSet<WarehouseInput> WarehouseInput { get; set; }
+    
+    public virtual DbSet<WarehouseTransactionHistory> WarehouseTransactionHistory { get; set; }
 
     // protected override void OnModelCreating(ModelBuilder modelBuilder)
     // {

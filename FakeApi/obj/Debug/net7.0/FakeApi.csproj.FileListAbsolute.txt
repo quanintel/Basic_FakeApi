@@ -206,3 +206,5 @@
 /Volumes/Data/Code/FakeApi/FakeApi/bin/Debug/net7.0/ImportJson/UnitDataJson.json
 /Volumes/Data/Code/FakeApi/FakeApi/bin/Debug/net7.0/ImportJson/WarehouseDataJson.json
 /Volumes/Data/Code/FakeApi/FakeApi/bin/Debug/net7.0/ImportJson/WarehouseProductDataJson.json
+/Volumes/Data/Code/FakeApi/FakeApi/bin/Debug/net7.0/ImportJson/WarehouseInputJson.json
+/Volumes/Data/Code/FakeApi/FakeApi/bin/Debug/net7.0/ImportJson/WarehouseTransactionHistoryJson.json

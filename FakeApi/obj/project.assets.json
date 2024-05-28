@@ -4434,6 +4434,7 @@
         "net7.0"
       ],
       "sources": {
+        "/Users/quanka/.dotnet/sdk/7.0.306/Sdks/Microsoft.NET.Sdk.Web/library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -4510,7 +4511,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.404/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/Users/quanka/.dotnet/sdk/7.0.306/RuntimeIdentifierGraph.json"
       }
     }
   }
